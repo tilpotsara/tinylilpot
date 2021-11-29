@@ -4,8 +4,8 @@ import express from 'express'
 import requestIp from 'request-ip'
 import { createClient } from '@supabase/supabase-js';
 const supabase = createClient(
-    process.env.TRILLYDB,
-    process.env.TRILLYDB_KEY,
+    process.env.NEXT_PUBLIC_SUPABASE_URL,
+    process.env.SUPABASE_SERVICE_ROLE_KEY,
     {
         autoRefreshToken: true,
         persistSession: true,
