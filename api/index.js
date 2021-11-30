@@ -10,7 +10,9 @@ const trackImg = Buffer.from('R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAA
 express().get('/api/:source/:id', (req, res) => {
     res.writeHead(200, { 'Content-Type': 'image/gif', 'Content-Length': trackImg.length }).end(trackImg);
     
-    const vm = process.env.COLUMN_NAMES.split(',');    
+    //const vm = process.env.COLUMN_NAMES.split(',');
+    const vm ="source,subPath,ip,useragent,lng,geo".split(',');
+    
     const o = {};
     ({
         params: { source: o[vm[0]], id: o[vm[1]] },
