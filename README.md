@@ -1,6 +1,9 @@
 # tinylilpot - Simple email tracking
 
-A simple tiny email read tracker using node.js express hosted on vercel & supabase.
+Tiny email tracker using node.js & express.
+
+- Hosting - [Vercel](https://vercel.com/)
+- Database - [Supabase](https://supabase.com/)
 
 ## Usage - Inject `<img src>` tag in email body
 Replace `SERVERADDRESS` with your host address e.g. `myemailtracker.vercel.app`.
