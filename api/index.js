@@ -29,4 +29,10 @@ app.get('/api/:source/:id', (req, res) => {
         .then(results => console.log(results.error))
         .catch(e => console.error(e));
 });
+app.get('/api/status', (req, res) => {
+    res.sendStatus(200);
+});
+app.get('/', (req, res) => {
+    res.sendStatus(200);
+});
 export default app;
